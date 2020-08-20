@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+  .apply-all {
+      background-color: darkgray;
+  }
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(assets/font/Roboto-Light.ttf);
+}
+* {
+  font-family: Roboto-Light;
+}
