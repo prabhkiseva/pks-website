@@ -1,0 +1,265 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(font/Roboto-Light.ttf);
+}
+* {
+  font-family: Roboto-Light;
+}
+@font-face {
+  font-family: DSRegular;
+  src: url(font/DancingScript-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(font/Roboto-Bold.ttf)
+}
+@font-face {
+  font-family: Roboto-boi;
+  src: url(font/Roboto-BoldItalic.ttf)
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(247, 242, 242);
+  outline: 7px solid rgb(52, 87, 151);
+}
+
+.topnav a {
+  float: left;
+  color:rgb(52, 87, 151);
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgb(223, 118, 20);
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.vertical-center-header {
+  margin-top: 10px;
+  margin-left: 800px;
+  
+}
+
+.header-spacing {
+margin-right: 50px;
+}
+
+h1, h2 {
+  font-family: DSRegular;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+
+
+.big-header {
+  font-size: 100px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.white-back-head {
+  background-color: white;
+  margin: 20px, 200px, 30px, 200px;
+  padding-bottom: 1px;
+  padding-top: 0px;
+}
+
+.home-background {
+  background-image: url(home_background.jpg);
+  background-color: white;
+  background-repeat: no-repeat;
+  border: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 650px;
+}
+
+.reg-text {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.round-img {
+  border-radius: 50%;
+  border: 10px solid black;
+  float: left;
+  clear: left;
+  margin-left: 150px;
+  margin-right: 50px;
+}
+
+.location-text {
+  font-family: Roboto-Bold;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 150px;
+  margin-right: 200px;
+  padding-left: 800px;
+}
+
+/* fade animation begin */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* fade animation end */
+
+/* About Us animation start */
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* counting style start */
+
+#num
+{
+  width: 200px;
+    height: 200px;
+    background: rgb(52, 87, 151);
+    
+    border-radius: 50%;
+    float:left;
+  text-align: center;
+  margin-left: 240px;
+}
+
+#numm
+{
+  width: 200px;
+    height: 200px;
+    background: rgb(52, 87, 151);
+    
+    border-radius: 50%;
+    float:left;
+  text-align: center;
+  margin-left: 230px;
+  margin-right: 70px;
+}
+
+#nummm
+{
+  width: 200px;
+    height: 200px;
+    background: rgb(52, 87, 151);
+    
+    border-radius: 50%;
+    float:left;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+#digit {
+  padding-left: 55px;
+}
+
+.count
+{
+  line-height: 200px;
+  
+  color:rgb(236, 144, 5);
+  margin-left:0px;
+  font-size:100px;
+  text-align: center;
+  padding-right: 0px;
+  
+}
+
+#stats {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#stats td, #stats th {
+  border: 1px solid #ddd;
+  padding: 0px;
+}
+
+
+#stats th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: Roboto-boi;
+  font-size: 25px;
+}
+
+.space-one {
+  margin-left: 300px;
+  color: indianred
+}
+
+/* counting style end */
+
+/* About Us animation start */
+
+
+
