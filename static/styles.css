@@ -6,6 +6,7 @@
 }
 * {
   font-family: Roboto-Light;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: DSRegular;
@@ -20,6 +21,12 @@
   src: url(font/Roboto-BoldItalic.ttf)
 }
 
+.sticky {
+  position: fixed;
+  top: 7px;
+  width: 100%;
+}
+
 .topnav {
   overflow: hidden;
   background-color: rgb(247, 242, 242);
@@ -31,6 +38,7 @@
   color:rgb(52, 87, 151);
   text-align: center;
   padding: 8px 8px;
+  display: inline-block;
   text-decoration: none;
   font-size: 17px;
 }
@@ -89,7 +97,7 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
   height: 650px;
 }
 
@@ -122,16 +130,16 @@ h3 {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3.5s;
   animation-name: fade;
-  animation-duration: 4.5s;
+  animation-duration: 2.0s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .1}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .1}
   to {opacity: 1}
 }
 
@@ -173,6 +181,8 @@ h3 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+/* About Us animation end */
 
 
 /* counting style start */
@@ -259,7 +269,35 @@ h3 {
 
 /* counting style end */
 
-/* About Us animation start */
+/* underline animation begin */
 
+.one:hover ~ hr {
+  margin-left: 0%;
+}
+
+.two:hover ~ hr {
+  margin-left: 20%;
+}
+
+.three:hover ~ hr {
+  margin-left: 40%;
+}
+
+.four:hover ~ hr {
+  margin-left: 60%;
+}
+
+.five:hover ~ hr {
+  margin-left: 80%;
+}
+
+hr {
+  height: .25rem;
+  width: 25%;
+  margin: 0;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+}
 
 

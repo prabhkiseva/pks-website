@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prabh Ki Seva</title>
   <link href="static/styles.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,26 +33,40 @@
         } // End if
       });
     });
+    window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
     </script>
 </head>  
 <body class="mat-typography apply-all">
   <div class="container">
-    <div class="topnav">
+    <div class="topnav sticky">
         
         <a class="navbar-item">
-            <img width="40" alt= "Prabh Ki Seva" src="static/pks_logo.JPG">
+            <img width="40" alt= "Prabh Ki Seva" href="index.html" src="static/pks_logo.JPG">
         </a>
         <div class="vertical-center-header">
-          <a class="nav-item nav-link header-spacing" href="index.html">HOME</a>
-          <a class="nav-item nav-link header-spacing" href="about.html">WHO WE ARE</a>
-          <a class="nav-item nav-link header-spacing" href="mission.html">OUR MISSION</a>
-          <a class="nav-item nav-link header-spacing" href="donate.html">HOW TO DONATE</a>
-          <a class="nav-item nav-link header-spacing" href="contact.html">CONTACT US</a>
+          <a class="one nav-item nav-link header-spacing" href="index.html">HOME</a>
+          <a class="two nav-item nav-link header-spacing" href="about.html">WHO WE ARE</a>
+          <a class="three nav-item nav-link header-spacing" href="mission.html">OUR MISSION</a>
+          <a class="four nav-item nav-link header-spacing" href="donate.html">HOW TO DONATE</a>
+          <a class="five nav-item nav-link header-spacing" href="contact.html">CONTACT US</a>
         </div>
     </div>
   </div>
   
+  
+    <br><br><br>
   <div class="home-background">
     <br>
     <div class="fade">
@@ -88,7 +103,7 @@
     <p  class="location-text">615 EAST HIGH STREET POTTSTOWN, PA 19464</p>   
     <p class="location-text">(more coming soon!)</p>
     <br><br><br><br><br><br><br><br><br>
-    <p>hello</p>
+    <p>**Add section for pictures of past food drives</p>
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </body>
