@@ -13,6 +13,10 @@
   src: url(font/DancingScript-Regular.ttf);
 }
 @font-face {
+  font-family: DSVariable;
+  src: url(font/DancingScript-VariableFont_wght.ttf)
+}
+@font-face {
   font-family: Roboto-Bold;
   src: url(font/Roboto-Bold.ttf)
 }
@@ -21,26 +25,35 @@
   src: url(font/Roboto-BoldItalic.ttf)
 }
 
+p {
+  font-size: 150%;
+}
+
+img {
+  max-width:100%
+}
+
 .sticky {
   position: fixed;
-  top: 7px;
+  top: .9%;
   width: 100%;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(247, 242, 242);
-  outline: 7px solid rgb(52, 87, 151);
+  z-index: 9999;
+  background-color: whitesmoke;
+  outline: 6pt solid rgb(52, 87, 151);
 }
 
 .topnav a {
   float: left;
   color:rgb(52, 87, 151);
   text-align: center;
-  padding: 8px 8px;
+  padding: 1% 1% 1%;
   display: inline-block;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 100%;
 }
 
 .topnav a:hover {
@@ -56,13 +69,13 @@
 }
 
 .vertical-center-header {
-  margin-top: 10px;
-  margin-left: 800px;
+  margin-top: .8%;
+  margin-left: 50%;
   
 }
 
 .header-spacing {
-margin-right: 50px;
+margin-right: 5.2%;
 }
 
 h1, h2 {
@@ -71,20 +84,20 @@ h1, h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 3vw;
 }
 
 
 
 .big-header {
-  font-size: 100px;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  font-size: 5vw;
+  margin-top: 1%;
+  margin-bottom: 0;
 }
 
 .white-back-head {
   background-color: white;
-  margin: 20px, 200px, 30px, 200px;
+  margin: 2%, 10%, 30px, 200px;
   padding-bottom: 1px;
   padding-top: 0px;
 }
@@ -97,7 +110,7 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
   height: 650px;
 }
 
@@ -118,7 +131,7 @@ h3 {
 .location-text {
   font-family: Roboto-Bold;
   text-align: center;
-  font-size: 30px;
+  font-size: 3vw;
   margin-top: 150px;
   margin-right: 200px;
   padding-left: 800px;
@@ -147,8 +160,18 @@ h3 {
 /* fade animation end */
 
 /* About Us animation start */
-
+.container {
+  position: relative;
+  
+}
+.cont {
+  width: 25%;
+  margin-left: 5%;
+  margin-top: 2%;
+  float: left;
+}
 .image {
+  
   display: block;
   width: 100%;
   height: auto;
@@ -159,27 +182,35 @@ h3 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
+  top: 0;
+  background-color: #ff8800;
+  opacity: 0.5;
+  overflow: auto;
   width: 100%;
   height: 0;
   transition: .5s ease;
 }
 
 .container:hover .overlay {
-  height: 100%;
+  height: 87%;
 }
 
 .text {
+  font-family: Roboto-Bold;
   white-space: nowrap; 
-  color: white;
-  font-size: 20px;
+  color: rgb(20, 20, 148);
+  font-size: 1.5vw;
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.name-head {
+  font-family: DSVariable;
+  text-align: center;
 }
 
 /* About Us animation end */
@@ -235,7 +266,7 @@ h3 {
   
   color:rgb(236, 144, 5);
   margin-left:0px;
-  font-size:100px;
+  font-size: 5vw;
   text-align: center;
   padding-right: 0px;
   
@@ -259,7 +290,7 @@ h3 {
   background-color: white;
   color: black;
   font-family: Roboto-boi;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 .space-one {
