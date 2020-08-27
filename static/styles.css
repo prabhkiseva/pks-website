@@ -39,7 +39,8 @@ h3 {
 }
 
 p {
-  font-size: 100%;
+  font-size: 1.25vw;
+  margin-bottom: 2%;
 }
 
 img {
@@ -135,8 +136,8 @@ img {
 }
 
 .reg-text {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .round-img {
